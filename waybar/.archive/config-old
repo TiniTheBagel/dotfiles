@@ -1,0 +1,3 @@
+@define-color primary #ff0000;
+@define-color secondary #00ff00;
+@define-color accent #0000ff;
