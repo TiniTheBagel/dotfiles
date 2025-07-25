@@ -1,3 +1,5 @@
+@import  "/home/lillian/.cache/wal/colors-waybar.css";
+
 *{
   font-family: Maple Mono;
   font-size: 14px;
@@ -7,7 +9,7 @@
 } 
 
 window#waybar {
-  background-image: linear-gradient(to bottom, #141216 100%);
+  background-image: linear-gradient(to bottom, @background 100%);
 
   border-radius: 14px;
   padding: 0px;
@@ -20,21 +22,21 @@ window#waybar {
 #custom-applauncher,
 #tray
 #pulseaudio {
-  background-image: linear-gradient(to bottom, #27232b 100%);
+  background-image: linear-gradient(to bottom, @background 100%);
 
   margin: 6px;
   margin-right: 0px;
   border-radius: 8px;
   padding: 4px 8px;
 
-  color: #d8cab8;
+  color: @color7;
   border-style:none;
 
   transition-duration: 120ms;
 }
 
 #workspaces button.active { 
-  background-image: linear-gradient(to bottom, #27232b 100%);
+  background-image: linear-gradient(to bottom, @color1 100%);
 
   margin: 6px;
   margin-right: 0px;
