@@ -1,16 +1,16 @@
 {
   "layer": "bot",
   "spacing": 0,
-  "height": 0,
+  "height": -1,
   "margin-bottom": 0,
-  "margin-top": 4,
+  "margin-top": 0,
   "position": "top",
-  "margin-right": 30,
-  "margin-left": 30,
+  "margin-right": 0,
+  "margin-left": 0,
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["custom/applauncher"],
-  "modules-right": ["network", "battery", "tray", "clock"],
+  "modules-right": ["network", "battery", "tray", "custom/weather", "clock"],
   
   "tray": {
     "spacing": 10,
@@ -18,7 +18,7 @@
   },
 
   "clock": { 
-    "format": "▢ {:%I:%M %p, %a}",
+    "format": "{:%I:%M %p, %a}",
     "tooltip": false
   },
 
@@ -46,5 +46,12 @@
     "format": "⚫",
     "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
     "tooltip": false
+  },
+
+
+  "custom/weather": {
+    "format": "{}",
+    "interval": 3600,
+    "exec": "~/Programs/weather-waybar.sh"
   }
 }

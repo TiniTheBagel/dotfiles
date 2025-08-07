@@ -8,6 +8,6 @@ insensitive=false
 allow_markup=true
 allow_images=true
 line_wrap=word
-lines=8
+lines=4
 no_actions=true
 hide_scroll=true

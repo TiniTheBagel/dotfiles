@@ -3,15 +3,16 @@
 *{
   font-family: Maple Mono;
   font-size: 14px;
-  border-radius: 9px;
   padding: 0px;
   background: transparent;
 } 
 
 window#waybar {
   background-image: linear-gradient(to bottom, @background 100%);
+  opacity: 0.85;
 
-  border-radius: 14px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   padding: 0px;
   border-style: none;
 }
@@ -20,7 +21,8 @@ window#waybar {
 #network,
 #clock,
 #custom-applauncher,
-#tray
+#custom-weather,
+#tray,
 #pulseaudio {
   background-image: linear-gradient(to bottom, @background 100%);
 
